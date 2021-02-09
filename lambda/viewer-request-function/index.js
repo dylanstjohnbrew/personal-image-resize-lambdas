@@ -5,6 +5,7 @@ const querystring = require('querystring');
 // defines the allowed dimensions, default dimensions and how much variance from allowed
 // dimension is allowed.
 
+// this currently does not allow for dynamic width/height selection
 const variables = {
         allowedDimension : [ {w:282,h:422}, {w:585,h:330}, {w:1200,h:422}, {w:1600,h:600}, {w:1600,h:1100} ],
         defaultDimension : {w:1600,h:1100},

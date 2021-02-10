@@ -1,5 +1,4 @@
 'use strict';
-
 const http = require('http');
 const https = require('https');
 const querystring = require('querystring');
@@ -9,9 +8,6 @@ const S3 = new AWS.S3({
   signatureVersion: 'v4',
 });
 const Sharp = require('sharp');
-
-// set the S3 and API GW endpoints
-const BUCKET = 's72-public-assets-staging'; // leaving this as staging for the moment
 
 exports.handler = (event, context, callback) => {
   let response = event.Records[0].cf.response;
